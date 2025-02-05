@@ -1,6 +1,6 @@
 {
-  "last_node_id": 50,
-  "last_link_id": 49,
+  "last_node_id": 51,
+  "last_link_id": 50,
   "nodes": [
     {
       "id": 7,
@@ -13,9 +13,7 @@
         310,
         58
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 0,
       "mode": 0,
       "inputs": [],
@@ -49,9 +47,7 @@
         310,
         98
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 1,
       "mode": 0,
       "inputs": [],
@@ -101,9 +97,7 @@
         330,
         70
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 8,
       "mode": 0,
       "inputs": [
@@ -166,9 +160,7 @@
         330,
         78
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 7,
       "mode": 0,
       "inputs": [
@@ -223,9 +215,7 @@
         315,
         58
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 6,
       "mode": 0,
       "inputs": [
@@ -263,9 +253,7 @@
         350,
         770
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 11,
       "mode": 0,
       "inputs": [
@@ -349,8 +337,7 @@
           "type": "IMAGE",
           "links": [
             18,
-            40,
-            42
+            50
           ],
           "slot_index": 0
         }
@@ -373,9 +360,7 @@
         400,
         200
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 10,
       "mode": 0,
       "inputs": [
@@ -406,33 +391,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 45,
-      "type": "PreviewImage",
-      "pos": [
-        2940.49853515625,
-        1036.233642578125
-      ],
-      "size": [
-        713.280029296875,
-        1135.6414794921875
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 42
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 9,
       "type": "CLIPTextEncode",
       "pos": [
@@ -443,9 +401,7 @@
         400,
         200
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 9,
       "mode": 0,
       "inputs": [
@@ -499,39 +455,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 33,
-      "type": "SaveImage",
-      "pos": [
-        2599.215576171875,
-        1943.871337890625
-      ],
-      "size": [
-        315,
-        270
-      ],
-      "flags": {
-        "pinned": true
-      },
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 40
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "ComfyUI"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 47,
       "type": "CR Aspect Ratio",
       "pos": [
@@ -542,9 +465,7 @@
         330,
         322
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 3,
       "mode": 0,
       "inputs": [],
@@ -611,33 +532,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 43,
-      "type": "PreviewImage",
-      "pos": [
-        4099.24609375,
-        1082.1324462890625
-      ],
-      "size": [
-        713.280029296875,
-        1135.6414794921875
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 41
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 14,
       "type": "UpscaleModelLoader",
       "pos": [
@@ -672,138 +566,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 17,
-      "type": "UltimateSDUpscale",
-      "pos": [
-        3701.1455078125,
-        1202.02294921875
-      ],
-      "size": [
-        377.5794982910156,
-        630.9744873046875
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 18
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 19
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 20
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 21
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 22
-        },
-        {
-          "name": "upscale_model",
-          "type": "UPSCALE_MODEL",
-          "link": 17
-        },
-        {
-          "name": "tile_width",
-          "type": "INT",
-          "link": 45,
-          "widget": {
-            "name": "tile_width"
-          }
-        },
-        {
-          "name": "tile_height",
-          "type": "INT",
-          "link": 46,
-          "widget": {
-            "name": "tile_height"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            27,
-            41
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UltimateSDUpscale"
-      },
-      "widgets_values": [
-        2,
-        431091667303032,
-        "randomize",
-        10,
-        5.5,
-        "dpmpp_2m",
-        "sgm_uniform",
-        0.2,
-        "Linear",
-        512,
-        512,
-        32,
-        128,
-        "None",
-        1,
-        64,
-        8,
-        16,
-        true,
-        false
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 20,
-      "type": "SaveImage",
-      "pos": [
-        3710.480224609375,
-        1892.1474609375
-      ],
-      "size": [
-        315,
-        270
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 27
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "ComfyUI"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
       "id": 50,
       "type": "easy loraStack",
       "pos": [
@@ -814,9 +576,7 @@
         305.2312927246094,
         202
       ],
-      "flags": {
-        "pinned": true
-      },
+      "flags": {},
       "order": 5,
       "mode": 0,
       "inputs": [
@@ -885,6 +645,168 @@
         1,
         1
       ]
+    },
+    {
+      "id": 17,
+      "type": "UltimateSDUpscale",
+      "pos": [
+        3701.1455078125,
+        1202.02294921875
+      ],
+      "size": [
+        377.5794982910156,
+        630.9744873046875
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 18
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 19
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 20
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 21
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 22
+        },
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 17
+        },
+        {
+          "name": "tile_width",
+          "type": "INT",
+          "link": 45,
+          "widget": {
+            "name": "tile_width"
+          }
+        },
+        {
+          "name": "tile_height",
+          "type": "INT",
+          "link": 46,
+          "widget": {
+            "name": "tile_height"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            27
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UltimateSDUpscale"
+      },
+      "widgets_values": [
+        2,
+        431091667303032,
+        "randomize",
+        10,
+        5.5,
+        "dpmpp_2m",
+        "sgm_uniform",
+        0.2,
+        "Linear",
+        512,
+        512,
+        32,
+        128,
+        "None",
+        1,
+        64,
+        8,
+        16,
+        true,
+        false
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 20,
+      "type": "SaveImage",
+      "pos": [
+        4099.0830078125,
+        1085.886962890625
+      ],
+      "size": [
+        705.418701171875,
+        1112.5780029296875
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 27
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 51,
+      "type": "SaveImage",
+      "pos": [
+        2952.03173828125,
+        1041.5135498046875
+      ],
+      "size": [
+        705.418701171875,
+        1112.5780029296875
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 50
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     }
   ],
   "links": [
@@ -1025,30 +947,6 @@
       "CLIP"
     ],
     [
-      40,
-      12,
-      0,
-      33,
-      0,
-      "IMAGE"
-    ],
-    [
-      41,
-      17,
-      0,
-      43,
-      0,
-      "IMAGE"
-    ],
-    [
-      42,
-      12,
-      0,
-      45,
-      0,
-      "IMAGE"
-    ],
-    [
       44,
       47,
       5,
@@ -1095,6 +993,14 @@
       5,
       2,
       "LORA_STACK"
+    ],
+    [
+      50,
+      12,
+      0,
+      51,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -1115,17 +1021,17 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8062664255582757,
+      "scale": 0.5506908172654023,
       "offset": [
-        -1213.5383346118708,
-        -843.4440356648005
+        -369.629464157581,
+        -617.3117965294712
       ]
     },
     "node_versions": {
       "comfy-core": "v0.3.10",
       "ComfyUI_Comfyroll_CustomNodes": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-      "comfyui_ultimatesdupscale": "ff3fdfeee03de46d4462211cffd165d27155e858",
-      "comfyui-easy-use": "65937a75ebdbe5c35afe6474dfe12673aca5f0ac"
+      "comfyui-easy-use": "65937a75ebdbe5c35afe6474dfe12673aca5f0ac",
+      "comfyui_ultimatesdupscale": "ff3fdfeee03de46d4462211cffd165d27155e858"
     },
     "ue_links": [],
     "VHS_latentpreview": false,
