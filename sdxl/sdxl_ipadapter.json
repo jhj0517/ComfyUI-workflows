@@ -226,77 +226,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 17,
-      "type": "IPAdapterAdvanced",
-      "pos": [
-        272.5023193359375,
-        433.7347412109375
-      ],
-      "size": [
-        315,
-        278
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 17
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": 20
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 19
-        },
-        {
-          "name": "image_negative",
-          "type": "IMAGE",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "attn_mask",
-          "type": "MASK",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "clip_vision",
-          "type": "CLIP_VISION",
-          "link": 18,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            22
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IPAdapterAdvanced"
-      },
-      "widgets_values": [
-        1,
-        "linear",
-        "concat",
-        0,
-        1,
-        "V only"
-      ]
-    },
-    {
       "id": 9,
       "type": "KSampler",
       "pos": [
@@ -398,38 +327,7 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 12,
-      "type": "SaveImage",
-      "pos": [
-        1319.4722900390625,
-        -87.33582305908203
-      ],
-      "size": [
-        455.5341491699219,
-        588.3648071289062
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 13
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "SaveImage"
-      },
-      "widgets_values": [
-        "IPAdapter"
-      ]
+      "widgets_values": []
     },
     {
       "id": 10,
@@ -549,6 +447,110 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 17,
+      "type": "IPAdapterAdvanced",
+      "pos": [
+        272.5023193359375,
+        433.7347412109375
+      ],
+      "size": [
+        315,
+        278
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 17
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 20
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 19
+        },
+        {
+          "name": "image_negative",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "clip_vision",
+          "type": "CLIP_VISION",
+          "link": 18,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            22
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IPAdapterAdvanced"
+      },
+      "widgets_values": [
+        1,
+        "linear",
+        "concat",
+        0,
+        1,
+        "V only"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 12,
+      "type": "SaveImage",
+      "pos": [
+        1319.4722900390625,
+        -87.33582305908203
+      ],
+      "size": [
+        455.5341491699219,
+        588.3648071289062
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 13
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "IPAdapter"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
     }
   ],
   "links": [
@@ -675,10 +677,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.0731406124180691,
+      "scale": 0.8062664255582801,
       "offset": [
-        458.72814758711934,
-        293.55885700324603
+        631.2347654852713,
+        402.6235435807722
       ]
     },
     "node_versions": {
