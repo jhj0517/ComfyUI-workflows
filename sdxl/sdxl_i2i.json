@@ -3,128 +3,6 @@
   "last_link_id": 61,
   "nodes": [
     {
-      "id": 7,
-      "type": "VAELoader",
-      "pos": [
-        1400,
-        1180
-      ],
-      "size": [
-        310,
-        58
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            49,
-            58,
-            59
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "sdxl-vae.safetensors"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 1,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        1400,
-        1030
-      ],
-      "size": [
-        310,
-        98
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            2
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            30
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [],
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "sd_xl_base_1.0.safetensors"
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 23,
-      "type": "CLIPSetLastLayer",
-      "pos": [
-        1585.6656494140625,
-        899.8013916015625
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 30
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            31
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPSetLastLayer"
-      },
-      "widgets_values": [
-        -2
-      ]
-    },
-    {
       "id": 11,
       "type": "KSampler",
       "pos": [
@@ -279,7 +157,7 @@
         141.25326538085938
       ],
       "flags": {},
-      "order": 2,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -302,7 +180,7 @@
         58
       ],
       "flags": {},
-      "order": 3,
+      "order": 1,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -323,125 +201,6 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 53,
-      "type": "easy loraStack",
-      "pos": [
-        1403.2689208984375,
-        1294.3463134765625
-      ],
-      "size": [
-        309.9940490722656,
-        202
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "optional_lora_stack",
-          "type": "LORA_STACK",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "lora_stack",
-          "type": "LORA_STACK",
-          "links": [
-            55
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "easy loraStack"
-      },
-      "widgets_values": [
-        false,
-        "simple",
-        2,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1,
-        "None",
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "id": 50,
-      "type": "LoadImage",
-      "pos": [
-        857.5277709960938,
-        1287.201416015625
-      ],
-      "size": [
-        488.6398620605469,
-        599.2655029296875
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            47
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "ComfyUI_01504_.png",
-        "image"
-      ]
     },
     {
       "id": 51,
@@ -681,9 +440,7 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       },
-      "widgets_values": [],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      "widgets_values": []
     },
     {
       "id": 55,
@@ -748,6 +505,213 @@
       "bgcolor": "#535"
     },
     {
+      "id": 53,
+      "type": "easy loraStack",
+      "pos": [
+        1403.2689208984375,
+        1294.3463134765625
+      ],
+      "size": [
+        309.9940490722656,
+        202
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "optional_lora_stack",
+          "type": "LORA_STACK",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "links": [
+            55
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy loraStack"
+      },
+      "widgets_values": [
+        false,
+        "simple",
+        2,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 1,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        1405.6380615234375,
+        1142.7530517578125
+      ],
+      "size": [
+        310,
+        98
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            30
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sd_xl_base_1.0.safetensors"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 7,
+      "type": "VAELoader",
+      "pos": [
+        1409.0201416015625,
+        1032.2938232421875
+      ],
+      "size": [
+        310,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            49,
+            58,
+            59
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl-vae.safetensors"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 50,
+      "type": "LoadImage",
+      "pos": [
+        857.5277709960938,
+        1287.201416015625
+      ],
+      "size": [
+        488.6398620605469,
+        599.2655029296875
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            47
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_01504_.png",
+        "image"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 5,
       "type": "CR Apply LoRA Stack",
       "pos": [
@@ -806,9 +770,47 @@
       "properties": {
         "Node name for S&R": "CR Apply LoRA Stack"
       },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
+      "widgets_values": []
+    },
+    {
+      "id": 23,
+      "type": "CLIPSetLastLayer",
+      "pos": [
+        1585.6656494140625,
+        899.8013916015625
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            31
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPSetLastLayer"
+      },
+      "widgets_values": [
+        -2
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -1031,17 +1033,17 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8062664255582757,
+      "scale": 0.5506908172654053,
       "offset": [
-        -950.2281040443535,
-        -833.987181812076
+        -543.4168601588387,
+        -751.6220360761639
       ]
     },
     "node_versions": {
       "comfy-core": "v0.3.10",
-      "comfyui-easy-use": "65937a75ebdbe5c35afe6474dfe12673aca5f0ac",
       "comfyui-kjnodes": "3f141b8f1ca1c832a1c6accd806f2d2f40fd4075",
       "comfyui_ultimatesdupscale": "ff3fdfeee03de46d4462211cffd165d27155e858",
+      "comfyui-easy-use": "65937a75ebdbe5c35afe6474dfe12673aca5f0ac",
       "ComfyUI_Comfyroll_CustomNodes": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca"
     },
     "ue_links": [],
