@@ -467,9 +467,7 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       },
-      "widgets_values": [],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      "widgets_values": []
     },
     {
       "id": 30,
@@ -1113,10 +1111,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8868930681141082,
+      "scale": 0.7329694777802546,
       "offset": [
-        -1197.9917565636522,
-        -929.8696115722828
+        -185.79991481154892,
+        -819.8719354055005
       ]
     },
     "node_versions": {
