@@ -425,50 +425,6 @@
       ]
     },
     {
-      "id": 12,
-      "type": "VAEDecode",
-      "pos": [
-        2557.012939453125,
-        1474.179443359375
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 72
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 51
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            18,
-            48
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": [],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 64,
       "type": "LoadFluxControlNet",
       "pos": [
@@ -980,6 +936,48 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 12,
+      "type": "VAEDecode",
+      "pos": [
+        2557.012939453125,
+        1474.179443359375
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 72
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 51
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            18,
+            48
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -1223,10 +1221,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8062664255582801,
+      "scale": 0.7329694777802546,
       "offset": [
-        -663.0653889305052,
-        -726.5009394779562
+        -1173.7238113955061,
+        -828.6860585428416
       ]
     },
     "node_versions": {

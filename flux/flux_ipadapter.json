@@ -399,9 +399,7 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       },
-      "widgets_values": [],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
+      "widgets_values": []
     },
     {
       "id": 9,
@@ -525,29 +523,6 @@
       "bgcolor": "#355"
     },
     {
-      "id": 30,
-      "type": "Note",
-      "pos": [
-        943.9835205078125,
-        929.7771606445312
-      ],
-      "size": [
-        449.9454650878906,
-        141.25326538085938
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "Ctrl + Drag to select multiple nodes.\n\nThis workflow uses xlab's custom node for controlnet from here:\n- https://github.com/XLabs-AI/x-flux-comfyui\n\nYou can download IPAdapter models from:\nhttps://huggingface.co/XLabs-AI/flux-ip-adapter/tree/main\n\nPlace the controlnet model file to ComfyUI/models/xlabs/ipadapters\n\nYou can download the text encoder (model.safetensors) from:\nhttps://huggingface.co/openai/clip-vit-large-patch14/tree/main\n\nPlace the controlnet model file to ComfyUI\\models\\clip_vision\n\n\nFor Flux models, See:\n\nYou can download the vae from:\nhttps://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors\n\nYou can download the model (GGUF) from:\nhttps://huggingface.co/city96/FLUX.1-dev-gguf/tree/main\n\nPlace the GGUF in ComfyUI/models/diffusion_models.\n\nYou can download the text encoders from:\nhttps://huggingface.co/comfyanonymous/flux_text_encoders/tree/main\n\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 76,
       "type": "LoadFluxIPAdapter",
       "pos": [
@@ -559,7 +534,7 @@
         106
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -593,7 +568,7 @@
         58
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -836,7 +811,7 @@
         250
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -906,6 +881,29 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 30,
+      "type": "Note",
+      "pos": [
+        943.9835205078125,
+        929.7771606445312
+      ],
+      "size": [
+        449.9454650878906,
+        141.25326538085938
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Ctrl + Drag to select multiple nodes.\n\nThis workflow uses xlab's custom node for controlnet from here:\n- https://github.com/XLabs-AI/x-flux-comfyui\n\nYou can download IPAdapter models from:\nhttps://huggingface.co/XLabs-AI/flux-ip-adapter/tree/main\n\nPlace the controlnet model file to ComfyUI/models/xlabs/ipadapters\n\nYou can download the text encoder (model.safetensors) from:\nhttps://huggingface.co/openai/clip-vit-large-patch14/tree/main\n\nPlace the model file to ComfyUI\\models\\clip_vision\n\n\nFor Flux models, See:\n\nYou can download the vae from:\nhttps://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors\n\nYou can download the model (GGUF) from:\nhttps://huggingface.co/city96/FLUX.1-dev-gguf/tree/main\n\nPlace the GGUF in ComfyUI/models/diffusion_models.\n\nYou can download the text encoders from:\nhttps://huggingface.co/comfyanonymous/flux_text_encoders/tree/main\n\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1133,10 +1131,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.975582374925519,
+      "scale": 1.2985001410258659,
       "offset": [
-        -1015.5442727258229,
-        -933.3061786844382
+        -760.1783507259706,
+        -768.3749484199511
       ]
     },
     "node_versions": {
