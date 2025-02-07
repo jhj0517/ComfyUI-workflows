@@ -1,6 +1,6 @@
 {
   "last_node_id": 51,
-  "last_link_id": 50,
+  "last_link_id": 54,
   "nodes": [
     {
       "id": 5,
@@ -14,7 +14,7 @@
         70
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -64,61 +64,6 @@
       "widgets_values": [],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 8,
-      "type": "CR VAE Input Switch",
-      "pos": [
-        1750,
-        1150
-      ],
-      "size": [
-        330,
-        78
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "VAE1",
-          "type": "VAE",
-          "link": 4,
-          "shape": 7,
-          "label": "1. Baked VAE"
-        },
-        {
-          "name": "VAE2",
-          "type": "VAE",
-          "link": 29,
-          "shape": 7,
-          "label": "2. Load VAE"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            13,
-            22
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR VAE Input Switch"
-      },
-      "widgets_values": [
-        1
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
     },
     {
       "id": 23,
@@ -172,7 +117,7 @@
         770
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -233,7 +178,7 @@
         46
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -244,7 +189,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 13
+          "link": 53
         }
       ],
       "outputs": [
@@ -275,7 +220,7 @@
         200
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -316,7 +261,7 @@
         200
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -346,106 +291,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 30,
-      "type": "Note",
-      "pos": [
-        936.7246704101562,
-        1040.352783203125
-      ],
-      "size": [
-        449.9454650878906,
-        141.25326538085938
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "Ctrl + Drag to select multiple nodes.\n\nYou can download t2i adapter (similar to controlent but faster) model from:\nhttps://huggingface.co/TencentARC/t2i-adapter-depth-zoe-sdxl-1.0/tree/main\n\nYou can download contolnet model from:\nhttps://huggingface.co/xinsir\n\nYou can download upsclae model from:\nhttps://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 47,
-      "type": "CR Aspect Ratio",
-      "pos": [
-        1755.4681396484375,
-        1283.806884765625
-      ],
-      "size": [
-        330,
-        322
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            45
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            46
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "upscale_factor",
-          "type": "FLOAT",
-          "links": null,
-          "slot_index": 2
-        },
-        {
-          "name": "prescale_factor",
-          "type": "FLOAT",
-          "links": null
-        },
-        {
-          "name": "batch_size",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "empty_latent",
-          "type": "LATENT",
-          "links": [
-            44
-          ],
-          "slot_index": 5
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Aspect Ratio"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        "custom",
-        "Off",
-        1,
-        1,
-        1
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 14,
       "type": "UpscaleModelLoader",
       "pos": [
@@ -457,7 +302,7 @@
         58
       ],
       "flags": {},
-      "order": 2,
+      "order": 0,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -491,7 +336,7 @@
         630.9744873046875
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 4,
       "inputs": [
         {
@@ -517,7 +362,7 @@
         {
           "name": "vae",
           "type": "VAE",
-          "link": 22
+          "link": 54
         },
         {
           "name": "upscale_model",
@@ -591,7 +436,7 @@
         1112.5780029296875
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 4,
       "inputs": [
         {
@@ -622,7 +467,7 @@
         1112.5780029296875
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -653,7 +498,7 @@
         98
       ],
       "flags": {},
-      "order": 3,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -676,9 +521,7 @@
         {
           "name": "VAE",
           "type": "VAE",
-          "links": [
-            4
-          ],
+          "links": [],
           "slot_index": 2
         }
       ],
@@ -692,40 +535,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 7,
-      "type": "VAELoader",
-      "pos": [
-        1406.20068359375,
-        1036.126953125
-      ],
-      "size": [
-        310,
-        58
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            29
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAELoader"
-      },
-      "widgets_values": [
-        "sdxl-vae.safetensors"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 50,
       "type": "easy loraStack",
       "pos": [
@@ -737,7 +546,7 @@
         202
       ],
       "flags": {},
-      "order": 5,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -807,6 +616,141 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 30,
+      "type": "Note",
+      "pos": [
+        936.7246704101562,
+        1040.352783203125
+      ],
+      "size": [
+        449.9454650878906,
+        141.25326538085938
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "The workflow's version is controlled in :\nhttps://github.com/jhj0517/ComfyUI-workflows\n\nCtrl + Drag to select multiple nodes.\n\nYou can download t2i adapter (similar to controlent but faster) model from:\nhttps://huggingface.co/TencentARC/t2i-adapter-depth-zoe-sdxl-1.0/tree/main\n\nYou can download contolnet model from:\nhttps://huggingface.co/xinsir\n\nYou can download upsclae model from:\nhttps://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 47,
+      "type": "CR Aspect Ratio",
+      "pos": [
+        1749.87646484375,
+        1159.871826171875
+      ],
+      "size": [
+        330,
+        322
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            45
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            46
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "upscale_factor",
+          "type": "FLOAT",
+          "links": null,
+          "slot_index": 2
+        },
+        {
+          "name": "prescale_factor",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "empty_latent",
+          "type": "LATENT",
+          "links": [
+            44
+          ],
+          "slot_index": 5
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Aspect Ratio"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "custom",
+        "Off",
+        1,
+        1,
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 7,
+      "type": "VAELoader",
+      "pos": [
+        1406.20068359375,
+        1036.126953125
+      ],
+      "size": [
+        310,
+        58
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            53,
+            54
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl-vae.safetensors"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
     }
   ],
   "links": [
@@ -817,14 +761,6 @@
       5,
       0,
       "MODEL"
-    ],
-    [
-      4,
-      1,
-      2,
-      8,
-      0,
-      "VAE"
     ],
     [
       6,
@@ -857,14 +793,6 @@
       12,
       0,
       "LATENT"
-    ],
-    [
-      13,
-      8,
-      0,
-      12,
-      1,
-      "VAE"
     ],
     [
       17,
@@ -907,28 +835,12 @@
       "CONDITIONING"
     ],
     [
-      22,
-      8,
-      0,
-      17,
-      4,
-      "VAE"
-    ],
-    [
       27,
       17,
       0,
       20,
       0,
       "IMAGE"
-    ],
-    [
-      29,
-      7,
-      0,
-      8,
-      1,
-      "VAE"
     ],
     [
       30,
@@ -1001,6 +913,22 @@
       51,
       0,
       "IMAGE"
+    ],
+    [
+      53,
+      7,
+      0,
+      12,
+      1,
+      "VAE"
+    ],
+    [
+      54,
+      7,
+      0,
+      17,
+      4,
+      "VAE"
     ]
   ],
   "groups": [
@@ -1021,10 +949,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8062664255582801,
+      "scale": 1.0731406124180725,
       "offset": [
-        -1072.2066580971978,
-        -757.5912728433477
+        -1102.972060859203,
+        -937.8181851854782
       ]
     },
     "node_versions": {
