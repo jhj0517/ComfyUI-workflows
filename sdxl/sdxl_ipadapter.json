@@ -6,8 +6,8 @@
       "id": 4,
       "type": "CLIPVisionLoader",
       "pos": [
-        -133.7410125732422,
-        568.7020874023438
+        518.8391723632812,
+        1040.010498046875
       ],
       "size": [
         370,
@@ -41,8 +41,8 @@
       "id": 3,
       "type": "IPAdapterModelLoader",
       "pos": [
-        -131.0762939453125,
-        438.77410888671875
+        521.50390625,
+        910.0824584960938
       ],
       "size": [
         370,
@@ -76,8 +76,8 @@
       "id": 2,
       "type": "VAELoader",
       "pos": [
-        -156.75003051757812,
-        73.238037109375
+        495.8301086425781,
+        544.5460815429688
       ],
       "size": [
         300,
@@ -111,8 +111,8 @@
       "id": 1,
       "type": "CheckpointLoaderSimple",
       "pos": [
-        -158.9222869873047,
-        -83.21772766113281
+        493.6578369140625,
+        388.0901794433594
       ],
       "size": [
         370,
@@ -162,8 +162,8 @@
       "id": 6,
       "type": "LoadImage",
       "pos": [
-        -127.25074005126953,
-        694.2267456054688
+        525.3295288085938,
+        1165.5355224609375
       ],
       "size": [
         387.876953125,
@@ -204,8 +204,8 @@
       "id": 9,
       "type": "KSampler",
       "pos": [
-        795.3900146484375,
-        -78.42001342773438
+        1447.9708251953125,
+        392.8879089355469
       ],
       "size": [
         315,
@@ -266,8 +266,8 @@
       "id": 11,
       "type": "VAEDecode",
       "pos": [
-        1138.7220458984375,
-        -80.13333129882812
+        1791.302734375,
+        391.1745910644531
       ],
       "size": [
         140,
@@ -308,8 +308,8 @@
       "id": 10,
       "type": "EmptyLatentImage",
       "pos": [
-        -159.7723388671875,
-        184.0458526611328
+        492.80780029296875,
+        655.354248046875
       ],
       "size": [
         210,
@@ -345,8 +345,8 @@
       "id": 8,
       "type": "CLIPTextEncode",
       "pos": [
-        343.2257385253906,
-        120.80266571044922
+        995.8062744140625,
+        592.1109008789062
       ],
       "size": [
         396.3688659667969,
@@ -386,8 +386,8 @@
       "id": 7,
       "type": "CLIPTextEncode",
       "pos": [
-        339.41375732421875,
-        -86.0005874633789
+        991.9943237304688,
+        385.3073425292969
       ],
       "size": [
         398.2513427734375,
@@ -427,8 +427,8 @@
       "id": 17,
       "type": "IPAdapterAdvanced",
       "pos": [
-        272.5023193359375,
-        433.7347412109375
+        925.0828857421875,
+        905.0430908203125
       ],
       "size": [
         315,
@@ -497,11 +497,36 @@
       "bgcolor": "#335"
     },
     {
+      "id": 13,
+      "type": "Note",
+      "pos": [
+        495.1339111328125,
+        61.05366134643555
+      ],
+      "size": [
+        456.8177490234375,
+        273.5598449707031
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "The workflow's version is controlled in :\nhttps://github.com/jhj0517/ComfyUI-workflows\n\nYou can download SDXL IP Adpater model from:\nhttps://huggingface.co/h94/IP-Adapter/tree/main/sdxl_models\n\nPlace it in ComfyUI/models/ipadapter after downloading.\n\nYou can download Clip Vsion model for SDXL from:\nhttps://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/tree/main\n\nPlace it in ComfyUI/models/clip_vision after downloading.\n\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
       "id": 12,
       "type": "SaveImage",
       "pos": [
-        1319.4722900390625,
-        -87.33582305908203
+        1972.052978515625,
+        383.97210693359375
       ],
       "size": [
         455.5341491699219,
@@ -526,31 +551,6 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 13,
-      "type": "Note",
-      "pos": [
-        -157.44622802734375,
-        -410.25439453125
-      ],
-      "size": [
-        456.8177490234375,
-        273.5598449707031
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "The workflow's version is controlled in :\nhttps://github.com/jhj0517/ComfyUI-workflows\n\nYou can download SDXL IP Adpater model from:\nhttps://huggingface.co/h94/IP-Adapter/tree/main/sdxl_models\n\nPlace it in ComfyUI/models/ipadapter after downloading.\n\nYou can download Clip Vsion model for SDXL from:\nhttps://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/tree/main\n\nPlace it in ComfyUI/models/clip_vision after downloading.\n\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -664,8 +664,8 @@
       "id": 1,
       "title": "IPAdapter",
       "bounding": [
-        -143.4127197265625,
-        347.1570129394531,
+        509.16741943359375,
+        818.4653930664062,
         750.3828735351562,
         855.2927856445312
       ],
@@ -677,10 +677,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8868930681141082,
+      "scale": 0.9755823749255209,
       "offset": [
-        772.053971250599,
-        520.7382323391842
+        -265.95227396564434,
+        38.12917238911685
       ]
     },
     "node_versions": {
