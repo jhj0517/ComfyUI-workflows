@@ -159,31 +159,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 13,
-      "type": "Note",
-      "pos": [
-        -157.44622802734375,
-        -410.25439453125
-      ],
-      "size": [
-        456.8177490234375,
-        273.5598449707031
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "You can download SDXL IP Adpater model from:\nhttps://huggingface.co/h94/IP-Adapter/tree/main/sdxl_models\n\nPlace it in ComfyUI/models/ipadapter after downloading.\n\nYou can download Clip Vsion model for SDXL from:\nhttps://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/tree/main\n\nPlace it in ComfyUI/models/clip_vision after downloading.\n\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 6,
       "type": "LoadImage",
       "pos": [
@@ -195,7 +170,7 @@
         452.7982177734375
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -341,7 +316,7 @@
         110
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -551,6 +526,31 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 13,
+      "type": "Note",
+      "pos": [
+        -157.44622802734375,
+        -410.25439453125
+      ],
+      "size": [
+        456.8177490234375,
+        273.5598449707031
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "The workflow's version is controlled in :\nhttps://github.com/jhj0517/ComfyUI-workflows\n\nYou can download SDXL IP Adpater model from:\nhttps://huggingface.co/h94/IP-Adapter/tree/main/sdxl_models\n\nPlace it in ComfyUI/models/ipadapter after downloading.\n\nYou can download Clip Vsion model for SDXL from:\nhttps://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/tree/main\n\nPlace it in ComfyUI/models/clip_vision after downloading.\n\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -677,10 +677,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8062664255582801,
+      "scale": 0.8868930681141082,
       "offset": [
-        631.2347654852713,
-        402.6235435807722
+        772.053971250599,
+        520.7382323391842
       ]
     },
     "node_versions": {
