@@ -14,7 +14,7 @@
         70
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -389,70 +389,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 30,
-      "type": "Note",
-      "pos": [
-        936.7246704101562,
-        1040.352783203125
-      ],
-      "size": [
-        449.9454650878906,
-        141.25326538085938
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "Ctrl + Drag to select multiple nodes.\n\nYou can download t2i adapter (similar to controlent but faster) model from:\nhttps://huggingface.co/TencentARC/t2i-adapter-depth-zoe-sdxl-1.0/tree/main\n\nYou can download contolnet model from:\nhttps://huggingface.co/xinsir\n\nYou can download upsclae model from:\nhttps://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 52,
-      "type": "VAEEncode",
-      "pos": [
-        1768.9705810546875,
-        1435.1607666015625
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "pixels",
-          "type": "IMAGE",
-          "link": 48
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 49
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            50
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEEncode"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 14,
       "type": "UpscaleModelLoader",
       "pos": [
@@ -464,7 +400,7 @@
         58
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -498,7 +434,7 @@
         314
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -732,46 +668,6 @@
       "bgcolor": "#535"
     },
     {
-      "id": 50,
-      "type": "LoadImage",
-      "pos": [
-        881.4773559570312,
-        1300.106689453125
-      ],
-      "size": [
-        488.6398620605469,
-        599.2655029296875
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            47
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "ComfyUI_01504_.png",
-        "image"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 23,
       "type": "CLIPSetLastLayer",
       "pos": [
@@ -783,7 +679,7 @@
         58
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -812,63 +708,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 51,
-      "type": "GetImageSizeAndCount",
-      "pos": [
-        1772.7276611328125,
-        1289.960205078125
-      ],
-      "size": [
-        277.20001220703125,
-        86
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 47
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            48
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": [
-            51
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": [
-            52
-          ],
-          "slot_index": 2
-        },
-        {
-          "name": "count",
-          "type": "INT",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "GetImageSizeAndCount"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 1,
       "type": "CheckpointLoaderSimple",
       "pos": [
@@ -880,7 +719,7 @@
         98
       ],
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -928,7 +767,7 @@
         58
       ],
       "flags": {},
-      "order": 6,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -964,7 +803,7 @@
         202
       ],
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1034,6 +873,167 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 30,
+      "type": "Note",
+      "pos": [
+        936.7246704101562,
+        1040.352783203125
+      ],
+      "size": [
+        449.9454650878906,
+        141.25326538085938
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "The workflow's version is controlled in :\nhttps://github.com/jhj0517/ComfyUI-workflows\n\nCtrl + Drag to select multiple nodes.\n\nYou can download t2i adapter (similar to controlent but faster) model from:\nhttps://huggingface.co/TencentARC/t2i-adapter-depth-zoe-sdxl-1.0/tree/main\n\nYou can download contolnet model from:\nhttps://huggingface.co/xinsir\n\nYou can download upsclae model from:\nhttps://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 50,
+      "type": "LoadImage",
+      "pos": [
+        881.4773559570312,
+        1300.106689453125
+      ],
+      "size": [
+        488.6398620605469,
+        599.2655029296875
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            47
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_01504_.png",
+        "image"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 51,
+      "type": "GetImageSizeAndCount",
+      "pos": [
+        1756.8858642578125,
+        1162.2972412109375
+      ],
+      "size": [
+        277.20001220703125,
+        86
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 47
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            48
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            51
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            52
+          ],
+          "slot_index": 2
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetImageSizeAndCount"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 52,
+      "type": "VAEEncode",
+      "pos": [
+        1754.992919921875,
+        1296.3157958984375
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 48
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 49
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            50
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "widgets_values": []
     }
   ],
   "links": [
@@ -1317,10 +1317,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8062664255582801,
+      "scale": 0.9755823749255204,
       "offset": [
-        -926.530501411873,
-        -829.4951772404903
+        -1237.6235672208936,
+        -790.6799647390362
       ]
     },
     "node_versions": {
@@ -1328,8 +1328,8 @@
       "comfy-core": "v0.3.10",
       "comfyui_controlnet_aux": "5a049bde9cc117dafc327cded156459289097ea1",
       "comfyui_ultimatesdupscale": "ff3fdfeee03de46d4462211cffd165d27155e858",
-      "comfyui-kjnodes": "3f141b8f1ca1c832a1c6accd806f2d2f40fd4075",
-      "comfyui-easy-use": "65937a75ebdbe5c35afe6474dfe12673aca5f0ac"
+      "comfyui-easy-use": "65937a75ebdbe5c35afe6474dfe12673aca5f0ac",
+      "comfyui-kjnodes": "3f141b8f1ca1c832a1c6accd806f2d2f40fd4075"
     },
     "ue_links": [],
     "VHS_latentpreview": false,
