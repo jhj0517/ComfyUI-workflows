@@ -639,29 +639,6 @@
       "widgets_values": []
     },
     {
-      "id": 30,
-      "type": "Note",
-      "pos": [
-        943.9835205078125,
-        929.7771606445312
-      ],
-      "size": [
-        449.9454650878906,
-        141.25326538085938
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "Ctrl + Drag to select multiple nodes.\n\nThis workflow uses xlab's custom node for controlnet from here:\n- https://github.com/XLabs-AI/x-flux-comfyui\n\nYou can download controlnet models from:\nhttps://huggingface.co/XLabs-AI/flux-controlnet-collections\n\nPlace the controlnet model file to ComfyUI/models/xlabs/controlnets\n\n\nFor Flux models, See:\n\nYou can download the vae from:\nhttps://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors\n\nYou can download the model (GGUF) from:\nhttps://huggingface.co/city96/FLUX.1-dev-gguf/tree/main\n\nPlace the GGUF in ComfyUI/models/diffusion_models.\n\nYou can download the text encoders from:\nhttps://huggingface.co/comfyanonymous/flux_text_encoders/tree/main\n\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 63,
       "type": "CannyEdgePreprocessor",
       "pos": [
@@ -866,7 +843,7 @@
         250
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -978,6 +955,29 @@
         "Node name for S&R": "VAEDecode"
       },
       "widgets_values": []
+    },
+    {
+      "id": 30,
+      "type": "Note",
+      "pos": [
+        943.9835205078125,
+        929.7771606445312
+      ],
+      "size": [
+        449.9454650878906,
+        141.25326538085938
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "The workflow's version is controlled in :\nhttps://github.com/jhj0517/ComfyUI-workflows\n\nCtrl + Drag to select multiple nodes.\n\nThis workflow uses xlab's custom node for controlnet from here:\n- https://github.com/XLabs-AI/x-flux-comfyui\n\nYou can download controlnet models from:\nhttps://huggingface.co/XLabs-AI/flux-controlnet-collections\n\nPlace the controlnet model file to ComfyUI/models/xlabs/controlnets\n\n\nFor Flux models, See:\n\nYou can download the vae from:\nhttps://huggingface.co/black-forest-labs/FLUX.1-schnell/blob/main/ae.safetensors\n\nYou can download the model (GGUF) from:\nhttps://huggingface.co/city96/FLUX.1-dev-gguf/tree/main\n\nPlace the GGUF in ComfyUI/models/diffusion_models.\n\nYou can download the text encoders from:\nhttps://huggingface.co/comfyanonymous/flux_text_encoders/tree/main\n\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1221,10 +1221,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7329694777802546,
+      "scale": 0.8062664255582801,
       "offset": [
-        -1173.7238113955061,
-        -828.6860585428416
+        -859.4868153708479,
+        -914.1362556371587
       ]
     },
     "node_versions": {
