@@ -432,29 +432,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 30,
-      "type": "Note",
-      "pos": [
-        936.7246704101562,
-        1040.352783203125
-      ],
-      "size": [
-        449.9454650878906,
-        141.25326538085938
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "Ctrl + Drag to select multiple nodes.\n\nYou can download t2i adapter (similar to controlent but faster) model from:\nhttps://huggingface.co/TencentARC/t2i-adapter-depth-zoe-sdxl-1.0/tree/main\n\nYou can download contolnet model from:\nhttps://huggingface.co/xinsir\n\nYou can download upsclae model from:\nhttps://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 14,
       "type": "UpscaleModelLoader",
       "pos": [
@@ -466,7 +443,7 @@
         58
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -704,7 +681,7 @@
         58
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -739,7 +716,7 @@
         98
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -787,7 +764,7 @@
         322
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -864,7 +841,7 @@
         202
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -974,6 +951,29 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 30,
+      "type": "Note",
+      "pos": [
+        936.7246704101562,
+        1040.352783203125
+      ],
+      "size": [
+        449.9454650878906,
+        141.25326538085938
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "The workflow's version is controlled in :\nhttps://github.com/jhj0517/ComfyUI-workflows\n\nCtrl + Drag to select multiple nodes.\n\nYou can download t2i adapter (similar to controlent but faster) model from:\nhttps://huggingface.co/TencentARC/t2i-adapter-depth-zoe-sdxl-1.0/tree/main\n\nYou can download contolnet model from:\nhttps://huggingface.co/xinsir\n\nYou can download upsclae model from:\nhttps://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -1233,10 +1233,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8868930681141082,
+      "scale": 0.8062664255582814,
       "offset": [
-        -1059.6882318587852,
-        -691.5858091787172
+        -908.2890923996996,
+        -855.9475906116396
       ]
     },
     "node_versions": {
