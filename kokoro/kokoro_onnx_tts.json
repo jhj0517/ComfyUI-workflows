@@ -6,8 +6,8 @@
       "id": 9,
       "type": "(Down)Load Kokoro Model",
       "pos": [
-        -151.1852569580078,
-        155.03860473632812
+        1802.4007568359375,
+        1117.5521240234375
       ],
       "size": [
         315,
@@ -36,41 +36,11 @@
       ]
     },
     {
-      "id": 11,
-      "type": "SaveAudio",
-      "pos": [
-        690.5546875,
-        152.1123504638672
-      ],
-      "size": [
-        315,
-        100
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "link": 37
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "SaveAudio"
-      },
-      "widgets_values": [
-        "Kokoro",
-        null
-      ]
-    },
-    {
       "id": 18,
       "type": "Kokoro Audio Generator",
       "pos": [
-        291.7872314453125,
-        154.1916961669922
+        2245.372802734375,
+        1116.7052001953125
       ],
       "size": [
         315,
@@ -117,11 +87,41 @@
       ]
     },
     {
+      "id": 11,
+      "type": "SaveAudio",
+      "pos": [
+        2644.14013671875,
+        1114.6258544921875
+      ],
+      "size": [
+        315,
+        100
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 37
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveAudio"
+      },
+      "widgets_values": [
+        "Kokoro",
+        null
+      ]
+    },
+    {
       "id": 20,
       "type": "CR Prompt Text",
       "pos": [
-        -151.14706420898438,
-        291.1015930175781
+        1802.4388427734375,
+        1253.614990234375
       ],
       "size": [
         400,
@@ -150,7 +150,7 @@
         "Node name for S&R": "CR Prompt Text"
       },
       "widgets_values": [
-        "Hello World Guys!"
+        "Hello World Guys! "
       ]
     }
   ],
@@ -184,10 +184,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.2985001410258978,
+      "scale": 1.0834705943388392,
       "offset": [
-        481.288583071472,
-        65.42538698067749
+        -1445.713823020981,
+        -764.4362366464766
       ]
     },
     "node_versions": {
